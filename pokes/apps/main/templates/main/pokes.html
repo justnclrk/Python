@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Pokes</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Welcome, {{ session_name }}!</h1>
+        <span>{{ people_poked_user }} people poked you!</span>
+        <span id="nav"><a href="/logout">Logout</a></span>
+        <div id="stats">
+            <p>You've been poked {{ user.poked.count }} times.</p>
+        </div>
+        <h4>People you may want to poke:</h4>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Alias</th>
+                    <th>Email Address</th>
+                    <th>Poke History</th>
+                    <th>Action</th>
+                </tr>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.alias }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.poked.count }}</td>
+                        <td><form action="/create_poke/{{user.id}}" method="POST">{% csrf_token %}<input class="button" type="submit" name="{{user.id}}" value="POKE!"></form></td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+    </div>
+</body>
+</html>
