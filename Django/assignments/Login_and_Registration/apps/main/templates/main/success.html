@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Login & Reg | Success</title>
+</head>
+<body>
+    <h2>Success! Welcome, {{ name }}!</h2>
+    <p id="green">Successfully registered (or logged in)!</p>
+    <hr>
+    <form action="/logout" method="POST">
+        {% csrf_token %}
+        <input class="button" type="submit" value="LOG OUT">
+    </form>
+</body>
+</html>

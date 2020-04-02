@@ -1,0 +1,10 @@
+#grid{
+    margin: 0px auto;
+}
+td{
+    text-align: center;
+}
+table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+ }

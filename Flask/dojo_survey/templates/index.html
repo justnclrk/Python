@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div id="former">
+        <form action="/result" method="post">
+            <p>Your Name: <input type="text" name="name"></p>
+            <p>Dojo Location: <input type="text" name="location"></p>
+            <p>Favorite Language: <input type="text" name="lang"></p>
+            <p>Comment (optional): <input type="textbox" name="comm"></p>
+            <p><input class="button" type="submit" value="Submit!"></p>
+        </form>
+    </div>
+</body>
+</html>

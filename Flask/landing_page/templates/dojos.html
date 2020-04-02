@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h2>Turtle Form</h2>
+    <form action="" method="post">
+        Name: <input type="text" name="name">
+        Favorite Ninja Turtle: <input type="text" name="turtle">
+        <input type="submit" value="Submit">
+    </form>
+    <p><img class ="turtle" src="{{ url_for('static', filename='giphy.gif')}}"></p>
+</body>
+</html>

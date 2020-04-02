@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Login & Reg | Home</title>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <h3>{% if message.tags %} {% endif %} {{ message }}</h3>
+        {% endfor %}
+    {% endif %}
+    <div id="reg">
+        <h2>Registration</h2>
+        <form action="/register" method="POST">
+            {% csrf_token %}
+            <p>First Name</p>
+            <p><input type="text" name="fname"></input></p>
+            <p>Last Name</p>
+            <p><input type="text" name="lname"></input></p>
+            <p>Email</p>
+            <p><input type="text" name="email"></input></p>
+            <p>Password:</p>
+            <p><input type="password" name="password"></input></p>
+            <p>Confirm Password</p>
+            <p><input type="password" name="confirm"></input></p>
+            <input class="button" type="submit" Value="REGISTER"></input>
+        </form>
+    </div>
+    <div id="log">
+        <h3>Login</h3>
+        <form action="/login" method="POST">
+            {% csrf_token %}
+            <p>Email</p>
+            <p><input type="text" name="email"></p>
+            <p>Password</p>
+            <p><input type="password" name="password"></p>
+            <input class="button" type="submit" value="LOGIN">
+        </form>
+    </div>
+</body>
+</html>

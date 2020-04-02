@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Add Book and Review</title>
+</head>
+<body>
+    <div class="header">
+        <h4>Add a New Book Title and a Review:</h4>        
+    </div>
+    <span class="nav"><a href="http://localhost:8000/books">Home</a>  |  <a href="/">Logout</a></span>
+    <form action="/books/create_book" method="POST">
+        {% csrf_token %}
+        <p>Book Title:  <input type="text" name="title"></p> 
+        <p>Author:  
+            <select name="author">
+                <option value="none"></option>
+                <option value='hemingway'>Ernest Hemingway</option>
+                <option value='salinger'>JD Salinger</option>
+                <option value='king'>Stephen King</option>
+                <option value='rowling'>J.K. Rowling</option>
+            </select>
+        </p>
+        <p>Review:</p>
+        <textarea type="textbox" name="review"></textarea>
+        <p>Rating: 
+            <select name="rating">
+                <option value="none"></option>
+                <option value="1">1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+            </select> stars.
+        </p>
+        <input type="submit" value="Add Book and Review">    
+    </form>
+
+</body>
+</html>

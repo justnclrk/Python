@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="header">        
+        <h4>Welcome, {{ name }}!</h4>
+    </div>
+    <span class="nav"><a href="/books/add">Add Book and Review</a>  |  <a href="/">Logout</a></span>
+    <div>
+        <h5>Recent Book Reviews:</h5>
+        {% for book in books %}
+            <p>{{ book.title }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

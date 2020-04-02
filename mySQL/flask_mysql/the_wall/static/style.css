@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flash_message, h5{
+    text-align: center;
+    color: orange;
+}
+#reg{
+    border-radius: 3px;
+    margin: 0px 50%;
+    background-color: lightseagreen;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 5px 10px;
+}
+#login{
+    border-radius: 3px;
+    margin: 10px 50%;
+    background-color: lightpink;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 5px 10px;
+}
+#header{
+    text-align: center;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.headertext{
+    margin: 2px 50px;
+    display: inline-block;
+}
+#messagebox{
+    text-align: center;
+}
+.wall_message{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50%;
+    margin: 10px auto;
+}
+h6{
+    color: grey;
+}
+.comment{
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    font-size: 10px;
+}

@@ -1,0 +1,14 @@
+1. 'database': dlb, # we got db as an argument
+
+	NameError: global name 'dlb' is not defined
+	Fix: wrong database name, corrected to db
+
+2. OperationalError: (_mysql_exceptions.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' (10061)") 
+  (Background on this error at: http://sqlalche.me/e/e3q8)
+
+	Fix: wrong port, should be 3306 instead of 3308 unless the port is defined as 3308.
+
+3. (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)") 
+   (Background on this error at: http://sqlalche.me/e/e3q8)
+
+	Fix: password needs to be defined password, root not roo.
