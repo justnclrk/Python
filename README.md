@@ -1,2 +1,2 @@
 # Python
- Django, Flask, MySQL
+Fundamentals, Django, Flask, MySQL
