@@ -12,7 +12,7 @@ decorator==4.2.1
 Django==1.11.10
 enum34==1.1.6
 feedparser==5.2.1
-Flask==0.12.2
+Flask==1.0
 Flask-SQLAlchemy==2.1
 html2text==2017.10.4
 ipython==5.5.0
