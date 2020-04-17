@@ -1,0 +1,7 @@
+USE twitter
+SELECT * FROM users;
+INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at) VALUES ('Lebron', 'James', 'kingjames', DATE_FORMAT('1984-12-30', '%Y-%m-%d'),  NOW(), NOW());
+
+DELETE FROM users WHERE id = 3;
+
+UPDATE users SET last_name = 'Bum' WHERE id = 5;
