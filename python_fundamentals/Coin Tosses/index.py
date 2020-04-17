@@ -10,18 +10,20 @@ def toss(reps):
     result = ""
     result_string_complete = ""
 
-    for x in range(1, reps):
+    for x in range(reps):
         new_toss = random.randint(0, 1)
         if new_toss == 1:
             head_count += 1
             result = "head"
-            print "Attempt #", attempt_count, ": Throwing a coin... It's a ", result, "! Got ", head_count, "head(s) so far and", tail_count, "tail(s) so far"
+            print("Attempt #", attempt_count, ": Throwing a coin... It's a ", result,
+                  "! Got ", head_count, "head(s) so far and", tail_count, "tail(s) so far")
         else:
             tail_count += 1
             result = "tail"
-            print "Attempt #", attempt_count, ": Throwing a coin... It's a ", result, "! Got ", head_count, "head(s) so far and", tail_count, "tail(s) so far"
+            print("Attempt #", attempt_count, ": Throwing a coin... It's a ", result,
+                  "! Got ", head_count, "head(s) so far and", tail_count, "tail(s) so far")
         attempt_count += 1
 
 
-toss(5001)
-print "Ending the program, thank you!"
+toss(5000)
+print("Ending the program, thank you!")

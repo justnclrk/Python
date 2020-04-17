@@ -8,7 +8,7 @@ def letterCheck(my_list, subString):
     for element in range(0, len(word_list)):
         if word_list[element].find(char) != -1:
             new_list.append(word_list[element])
-    print new_list
+    print(new_list)
 
 
 letterCheck(word_list, char)

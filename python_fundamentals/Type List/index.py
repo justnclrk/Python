@@ -16,19 +16,19 @@ def identify_list_type(lst):
             new_string += value
 
     if new_string and total:
-        print "The array you entered is of mixed type"
-        print "String:", new_string
-        print "Total:", total
+        print("The array you entered is of mixed type")
+        print("String:", new_string)
+        print("Total:", total)
 
     elif new_string:
-        print "The array you entered is of string type"
-        print "String:", new_string
+        print("The array you entered is of string type")
+        print("String:", new_string)
 
     else:
-        print "The array you entered is of number(float or int) type"
-        print "Total:", total
+        print("The array you entered is of number(float or int) type")
+        print("Total:", total)
 
 
-print identify_list_type(mixed)
-print identify_list_type(integer)
-print identify_list_type(string)
+print(identify_list_type(mixed))
+print(identify_list_type(integer))
+print(identify_list_type(string))
