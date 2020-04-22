@@ -1,12 +1,14 @@
+"""
+Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
+
+compareTriplets has the following parameter(s):
+
+a: an array of integers representing Alice's challenge rating
+b: an array of integers representing Bob's challenge rating
+"""
+
+
 def compareTriplets(a, b):
-    """
-    Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
-
-    compareTriplets has the following parameter(s):
-
-    a: an array of integers representing Alice's challenge rating
-    b: an array of integers representing Bob's challenge rating
-    """
     points = [0, 0]  # define points array as zero
     arr = list(zip(a, b))  # combine a and b into a new array
     for i in arr:  # iterate over new array

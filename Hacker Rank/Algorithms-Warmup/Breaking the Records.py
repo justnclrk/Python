@@ -1,6 +1,10 @@
+"""
+Given Maria's scores for a season, find and print the number of times she breaks her
+records for most and least points scored during the season.
+"""
+
 
 def breakingRecords(scores):
-    """Given Maria's scores for a season, find and print the number of times she breaks her records for most and least points scored during the season."""
     maxi = scores[0]  # create an empty array for max scores
     mini = scores[0]  # create an empty array for min scores
     maxcount = 0  # create max count

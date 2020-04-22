@@ -1,8 +1,9 @@
 import math
 
+"""Given the initial value of grade for each of Sam's n students, write code to automate the rounding process."""
+
 
 def gradingStudents(grades):
-    """Given the initial value of grade for each of Sam's n students, write code to automate the rounding process."""
     result = []  # create empty array to store new integers
     for grade in grades:  # run through items in grades array
         r = 5 * math.ceil(grade / 5)  # define rounded up grade (rounded up to the multiple of 5)

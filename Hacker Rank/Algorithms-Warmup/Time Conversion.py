@@ -1,5 +1,7 @@
+"""Given a time in 12-hour AM/PM format, convert it to military (24-hour) time."""
+
+
 def timeConversion(s):
-    """Given a time in 12-hour AM/PM format, convert it to military (24-hour) time."""
     time = s.split(':')  # split the time by the :
     if s[-2:] == 'PM':  # check last two items (AM/PM) in array
         if time[0] != '12':  # if the hour is not equal to 12

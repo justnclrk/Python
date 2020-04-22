@@ -1,9 +1,11 @@
+"""
+Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.
+Print the decimal value of each fraction on a new line.
+"""
+
 
 def plusMinus(arr):
-    """
-    Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.
-    Print the decimal value of each fraction on a new line.
-    """
+
     positive = 0  # define positive count
     negative = 0  # define negaive count
     zero = 0  # define zero count
