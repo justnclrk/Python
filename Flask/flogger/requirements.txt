@@ -4,7 +4,7 @@
 # Flask-WTF==0.14.2 (Manage HTML Forms)
 # Flask-Markdown==0.3 (Text input standard)
 # python-slugify==2.0.1 (Standard compliant urls from text inputs)
-# Pillow==6.2.1 (Resize and convent images)
+# Pillow==8.1.1 (Resize and convent images)
 alembic==1.0.7
 Click==7.0
 Flask==1.0.2
@@ -17,7 +17,7 @@ Jinja2==2.10
 Mako==1.0.7
 Markdown==3.0.1
 MarkupSafe==1.1.1
-Pillow==6.2.1
+Pillow==8.1.1
 PyMySQL==0.9.3
 python-dateutil==2.8.0
 python-dotenv==0.10.1
