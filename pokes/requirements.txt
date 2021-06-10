@@ -9,7 +9,7 @@ colorama==0.3.9
 configparser==3.5.0
 cssselect==1.0.3
 decorator==4.2.1
-Django==1.11.10
+Django==2.2.24
 enum34==1.1.6
 feedparser==5.2.1
 Flask==0.12.2
